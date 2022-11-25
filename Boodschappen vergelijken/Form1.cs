@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Boodschappen_vergelijken
 {
@@ -29,7 +30,7 @@ namespace Boodschappen_vergelijken
 
         private void button1_Click(object sender, EventArgs e)
         {
-           ;
+   
         }
     }
 }
