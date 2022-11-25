@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 22, 2022 at 09:34 AM
+-- Generation Time: Nov 25, 2022 at 11:17 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -32,6 +32,32 @@ CREATE TABLE `product` (
   `naam` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `product`
+--
+
+INSERT INTO `product` (`id`, `naam`) VALUES
+(1, 'eieren'),
+(2, 'melk'),
+(3, 'kaas'),
+(4, 'brood'),
+(5, 'cola'),
+(6, 'water'),
+(7, 'boter'),
+(8, 'ham'),
+(9, 'pindakaas'),
+(10, 'stokbrood'),
+(11, 'vla'),
+(12, 'yoghurt'),
+(13, 'nootjes'),
+(14, 'kip'),
+(15, 'meloen'),
+(16, 'appel'),
+(17, 'kiwi'),
+(18, 'sushi'),
+(19, 'banaan'),
+(20, 'sap');
+
 -- --------------------------------------------------------
 
 --
@@ -42,6 +68,17 @@ CREATE TABLE `winkel` (
   `id` int(11) NOT NULL,
   `naam` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `winkel`
+--
+
+INSERT INTO `winkel` (`id`, `naam`) VALUES
+(1, 'Albert Heijn'),
+(2, 'Jumbo'),
+(3, 'Plus'),
+(4, 'Dekamarkt'),
+(5, 'Vomar');
 
 -- --------------------------------------------------------
 
@@ -89,13 +126,13 @@ ALTER TABLE `winkelproduct`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `winkel`
 --
 ALTER TABLE `winkel`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `winkelproduct`

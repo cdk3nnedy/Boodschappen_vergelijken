@@ -39,7 +39,7 @@ namespace Boodschappen_vergelijken
             this.textboxtoevoegen = new System.Windows.Forms.TextBox();
             this.btntoevoegen = new System.Windows.Forms.Button();
             this.listboxproductlijst = new System.Windows.Forms.ListBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.verglijkbtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.listboxwinkel = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -56,7 +56,7 @@ namespace Boodschappen_vergelijken
             this.cbah.TabIndex = 0;
             this.cbah.Text = "Albert Heijn";
             this.cbah.UseVisualStyleBackColor = true;
-            this.cbah.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.cbah.CheckedChanged += new System.EventHandler(this.cbah_CheckedChanged);
             // 
             // cbplus
             // 
@@ -68,6 +68,7 @@ namespace Boodschappen_vergelijken
             this.cbplus.TabIndex = 1;
             this.cbplus.Text = "Plus";
             this.cbplus.UseVisualStyleBackColor = true;
+            this.cbplus.CheckedChanged += new System.EventHandler(this.cbplus_CheckedChanged);
             // 
             // cbdeka
             // 
@@ -79,6 +80,7 @@ namespace Boodschappen_vergelijken
             this.cbdeka.TabIndex = 2;
             this.cbdeka.Text = "Dekamarkt";
             this.cbdeka.UseVisualStyleBackColor = true;
+            this.cbdeka.CheckedChanged += new System.EventHandler(this.cbdeka_CheckedChanged);
             // 
             // cbvomar
             // 
@@ -90,6 +92,7 @@ namespace Boodschappen_vergelijken
             this.cbvomar.TabIndex = 3;
             this.cbvomar.Text = "Vomar";
             this.cbvomar.UseVisualStyleBackColor = true;
+            this.cbvomar.CheckedChanged += new System.EventHandler(this.cbvomar_CheckedChanged);
             // 
             // cbjumbo
             // 
@@ -101,6 +104,7 @@ namespace Boodschappen_vergelijken
             this.cbjumbo.TabIndex = 4;
             this.cbjumbo.Text = "Jumbo";
             this.cbjumbo.UseVisualStyleBackColor = true;
+            this.cbjumbo.CheckedChanged += new System.EventHandler(this.cbjumbo_CheckedChanged);
             // 
             // label1
             // 
@@ -121,7 +125,6 @@ namespace Boodschappen_vergelijken
             this.label2.Size = new System.Drawing.Size(357, 24);
             this.label2.TabIndex = 6;
             this.label2.Text = "Voeg een Product toe aan de vergelijklijst";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textboxtoevoegen
             // 
@@ -140,6 +143,7 @@ namespace Boodschappen_vergelijken
             this.btntoevoegen.TabIndex = 8;
             this.btntoevoegen.Text = "Toevoegen";
             this.btntoevoegen.UseVisualStyleBackColor = true;
+            this.btntoevoegen.Click += new System.EventHandler(this.btntoevoegen_Click);
             // 
             // listboxproductlijst
             // 
@@ -151,15 +155,16 @@ namespace Boodschappen_vergelijken
             this.listboxproductlijst.Size = new System.Drawing.Size(439, 334);
             this.listboxproductlijst.TabIndex = 9;
             // 
-            // button2
+            // verglijkbtn
             // 
-            this.button2.Location = new System.Drawing.Point(112, 679);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(320, 58);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "vergelijk";
-            this.button2.UseVisualStyleBackColor = true;
+            this.verglijkbtn.Location = new System.Drawing.Point(112, 679);
+            this.verglijkbtn.Margin = new System.Windows.Forms.Padding(4);
+            this.verglijkbtn.Name = "verglijkbtn";
+            this.verglijkbtn.Size = new System.Drawing.Size(320, 58);
+            this.verglijkbtn.TabIndex = 10;
+            this.verglijkbtn.Text = "vergelijk";
+            this.verglijkbtn.UseVisualStyleBackColor = true;
+            this.verglijkbtn.Click += new System.EventHandler(this.verglijkbtn_Click);
             // 
             // label3
             // 
@@ -170,7 +175,6 @@ namespace Boodschappen_vergelijken
             this.label3.Size = new System.Drawing.Size(330, 24);
             this.label3.TabIndex = 11;
             this.label3.Text = "De product in totaal zijn goedkoper bij:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // listboxwinkel
             // 
@@ -191,7 +195,6 @@ namespace Boodschappen_vergelijken
             this.label4.Size = new System.Drawing.Size(418, 24);
             this.label4.TabIndex = 13;
             this.label4.Text = "De producten individueel zijn het goedkoopst bij:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // listboxproductindividu
             // 
@@ -215,7 +218,7 @@ namespace Boodschappen_vergelijken
             this.Controls.Add(this.label4);
             this.Controls.Add(this.listboxwinkel);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.verglijkbtn);
             this.Controls.Add(this.listboxproductlijst);
             this.Controls.Add(this.btntoevoegen);
             this.Controls.Add(this.textboxtoevoegen);
@@ -250,7 +253,7 @@ namespace Boodschappen_vergelijken
         private System.Windows.Forms.TextBox textboxtoevoegen;
         private System.Windows.Forms.Button btntoevoegen;
         private System.Windows.Forms.ListBox listboxproductlijst;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button verglijkbtn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ListBox listboxwinkel;
         private System.Windows.Forms.Label label4;

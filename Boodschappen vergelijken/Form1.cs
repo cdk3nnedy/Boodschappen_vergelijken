@@ -28,9 +28,11 @@ namespace Boodschappen_vergelijken
 
         }
 
+        //opstart button 
+        // programma opstarten en eventuele conn 
         private void button1_Click(object sender, EventArgs e)
         {
-   
+            
         }
     }
 }
