@@ -15,6 +15,11 @@ namespace Boodschappen_vergelijken
         public Form2()
         {
             InitializeComponent();
+            cbplus.AutoCheck = true;
+            cbjumbo.AutoCheck = true;
+            cbah.AutoCheck = true;
+            cbvomar.AutoCheck = true;
+          
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -29,29 +34,35 @@ namespace Boodschappen_vergelijken
 
         // checkboxen moet boolens opslaan 
         // if checkbox is check bool is true 
+        bool pluschecked, dekachecked, vomarchecked, ahchecked, jumbochecked;
         private void cbplus_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (cbplus.Checked){pluschecked = true;}
+            else{pluschecked = false;}
         }
 
         private void cbdeka_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (cbdeka.Checked){dekachecked = true;}
+            else{dekachecked = false;}
         }
 
         private void cbvomar_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (cbvomar.Checked){vomarchecked = true;}
+            else{vomarchecked = false;}
         }
 
         private void cbjumbo_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (cbjumbo.Checked){jumbochecked = true;}
+            else{jumbochecked = false;}
         }
 
         private void cbah_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (cbah.Checked){ahchecked = true;}
+            else{ahchecked = false;}
         }
 
 
