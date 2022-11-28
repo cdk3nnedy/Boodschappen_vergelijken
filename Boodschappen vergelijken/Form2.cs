@@ -86,7 +86,7 @@ namespace Boodschappen_vergelijken
         // de voorbenoemde array moeten worden gequeried met de database 
         // info wordt uit db gehaald en met deze knop worden de sums op desc gezet in listboxwinkel
         // de array wordt een voor een gequeried en gekeken bij welke hij goedkoper is en dat wordt aan listboxproductindividu toegevoegd
-        private void verglijkbtn_Click(object sender, EventArgs e)
+        private void vergelijkbtn_Click(object sender, EventArgs e)
         {
 
         }
