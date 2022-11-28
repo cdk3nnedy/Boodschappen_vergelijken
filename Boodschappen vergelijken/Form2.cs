@@ -74,7 +74,7 @@ namespace Boodschappen_vergelijken
         // ook in array stoppen
         private void btntoevoegen_Click(object sender, EventArgs e)
         {
-
+            listboxproductlijst.Items.Add(textboxtoevoegen);
         }
 
 
