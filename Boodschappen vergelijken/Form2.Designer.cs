@@ -39,7 +39,7 @@ namespace Boodschappen_vergelijken
             this.textboxtoevoegen = new System.Windows.Forms.TextBox();
             this.btntoevoegen = new System.Windows.Forms.Button();
             this.listboxproductlijst = new System.Windows.Forms.ListBox();
-            this.verglijkbtn = new System.Windows.Forms.Button();
+            this.vergelijkbtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.listboxwinkel = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -155,16 +155,16 @@ namespace Boodschappen_vergelijken
             this.listboxproductlijst.Size = new System.Drawing.Size(439, 334);
             this.listboxproductlijst.TabIndex = 9;
             // 
-            // verglijkbtn
+            // vergelijkbtn
             // 
-            this.verglijkbtn.Location = new System.Drawing.Point(112, 679);
-            this.verglijkbtn.Margin = new System.Windows.Forms.Padding(4);
-            this.verglijkbtn.Name = "verglijkbtn";
-            this.verglijkbtn.Size = new System.Drawing.Size(320, 58);
-            this.verglijkbtn.TabIndex = 10;
-            this.verglijkbtn.Text = "vergelijk";
-            this.verglijkbtn.UseVisualStyleBackColor = true;
-            this.verglijkbtn.Click += new System.EventHandler(this.verglijkbtn_Click);
+            this.vergelijkbtn.Location = new System.Drawing.Point(112, 679);
+            this.vergelijkbtn.Margin = new System.Windows.Forms.Padding(4);
+            this.vergelijkbtn.Name = "vergelijkbtn";
+            this.vergelijkbtn.Size = new System.Drawing.Size(320, 58);
+            this.vergelijkbtn.TabIndex = 10;
+            this.vergelijkbtn.Text = "vergelijk";
+            this.vergelijkbtn.UseVisualStyleBackColor = true;
+            this.vergelijkbtn.Click += new System.EventHandler(this.vergelijkbtn_Click);
             // 
             // label3
             // 
@@ -218,7 +218,7 @@ namespace Boodschappen_vergelijken
             this.Controls.Add(this.label4);
             this.Controls.Add(this.listboxwinkel);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.verglijkbtn);
+            this.Controls.Add(this.vergelijkbtn);
             this.Controls.Add(this.listboxproductlijst);
             this.Controls.Add(this.btntoevoegen);
             this.Controls.Add(this.textboxtoevoegen);
@@ -253,7 +253,7 @@ namespace Boodschappen_vergelijken
         private System.Windows.Forms.TextBox textboxtoevoegen;
         private System.Windows.Forms.Button btntoevoegen;
         private System.Windows.Forms.ListBox listboxproductlijst;
-        private System.Windows.Forms.Button verglijkbtn;
+        private System.Windows.Forms.Button vergelijkbtn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ListBox listboxwinkel;
         private System.Windows.Forms.Label label4;

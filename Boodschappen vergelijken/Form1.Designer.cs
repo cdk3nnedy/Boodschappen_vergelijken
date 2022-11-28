@@ -35,9 +35,10 @@ namespace Boodschappen_vergelijken
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(495, 298);
+            this.button1.Location = new System.Drawing.Point(210, 170);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 35);
+            this.button1.Size = new System.Drawing.Size(66, 28);
             this.button1.TabIndex = 0;
             this.button1.Text = "Opstarten";
             this.button1.UseVisualStyleBackColor = true;
@@ -46,20 +47,22 @@ namespace Boodschappen_vergelijken
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(439, 247);
+            this.label1.Location = new System.Drawing.Point(168, 129);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(232, 17);
+            this.label1.Size = new System.Drawing.Size(175, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Welkom druk hier om op te starten! ";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1145, 688);
+            this.ClientSize = new System.Drawing.Size(434, 335);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
