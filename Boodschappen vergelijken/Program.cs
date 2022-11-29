@@ -13,7 +13,7 @@ namespace Boodschappen_vergelijken
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        private static void Main()
+        public static void Main()
         {
             string server = "localhost";
             string database = "boodschappenvergelijken";

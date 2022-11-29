@@ -28,41 +28,76 @@ namespace Boodschappen_vergelijken
         }
 
 
-
-
-
-
         // checkboxen moet boolens opslaan 
         // if checkbox is check bool is true 
+        int intID=0;
         bool pluschecked, dekachecked, vomarchecked, ahchecked, jumbochecked;
         private void cbplus_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbplus.Checked){pluschecked = true;}
-            else{pluschecked = false;}
+            if (cbplus.Checked)
+            {
+                pluschecked = true;
+                intID++;
+            }
+            else
+            {   pluschecked = false;
+                intID--;            
+            }
         }
 
         private void cbdeka_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbdeka.Checked){dekachecked = true;}
-            else{dekachecked = false;}
+            if (cbdeka.Checked)
+            {
+                dekachecked = true;
+                intID++;
+            }
+            else
+            {
+                dekachecked = false;
+                intID--;
+            }
         }
 
         private void cbvomar_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbvomar.Checked){vomarchecked = true;}
-            else{vomarchecked = false;}
+            if (cbvomar.Checked)
+            {
+                vomarchecked = true;
+                intID++;
+            }
+            else
+            {
+                vomarchecked = false;
+                intID--;
+            }
         }
 
         private void cbjumbo_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbjumbo.Checked){jumbochecked = true;}
-            else{jumbochecked = false;}
+            if (cbjumbo.Checked){
+                jumbochecked = true;
+                intID++;
+            }
+            else
+            {
+                jumbochecked = false;
+                intID--;
+            }
         }
 
         private void cbah_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbah.Checked){ahchecked = true;}
-            else{ahchecked = false;}
+            if (cbah.Checked)
+            {
+                ahchecked = true;
+                intID++;
+            }
+            else
+            {
+                ahchecked = false;
+                intID--;
+            }
         }
 
 
@@ -92,10 +127,19 @@ namespace Boodschappen_vergelijken
         // de array wordt een voor een gequeried en gekeken bij welke hij goedkoper is en dat wordt aan listboxproductindividu toegevoegd
         private void vergelijkbtn_Click(object sender, EventArgs e)
         {
+            if (intID == 5)
+            {
+                string query = "select * from ";
+            }
+            
             if (listboxproductlijst.Text == "")
             {
-                MessageBox.Show("vul aub een product in ");
+                //MessageBox.Show("vul aub een product in ");
+                MessageBox.Show(intID.ToString());
             }
+
+
+     
 
         }
 
