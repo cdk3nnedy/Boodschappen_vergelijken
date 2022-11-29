@@ -75,6 +75,10 @@ namespace Boodschappen_vergelijken
         private void btntoevoegen_Click(object sender, EventArgs e)
         {
             listboxproductlijst.Items.Add(textboxtoevoegen);
+            if (textboxtoevoegen.Text == "")
+            {
+                MessageBox.Show("vul aub een product in ");
+            }
         }
 
 
@@ -88,6 +92,10 @@ namespace Boodschappen_vergelijken
         // de array wordt een voor een gequeried en gekeken bij welke hij goedkoper is en dat wordt aan listboxproductindividu toegevoegd
         private void vergelijkbtn_Click(object sender, EventArgs e)
         {
+            if (listboxproductlijst.Text == "")
+            {
+                MessageBox.Show("vul aub een product in ");
+            }
 
         }
 

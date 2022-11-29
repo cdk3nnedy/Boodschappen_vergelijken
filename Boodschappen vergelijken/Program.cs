@@ -13,13 +13,7 @@ namespace Boodschappen_vergelijken
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1()); 
-        }
-        static void Main(string[] args)
+        private static void Main()
         {
             string server = "localhost";
             string database = "boodschappenvergelijken";
@@ -29,7 +23,13 @@ namespace Boodschappen_vergelijken
                 "UID=" + username + ";" + "PASSWORD=" + password + ";";
             MySqlConnection conn = new MySqlConnection(constring);
             conn.Open();
-            string query = "select * from ...."; 
+            string query = "select * from ....";
+
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
+            
         }
+        
     }
 }

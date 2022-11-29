@@ -149,7 +149,7 @@ namespace Boodschappen_vergelijken
             // 
             this.listboxproductlijst.FormattingEnabled = true;
             this.listboxproductlijst.ItemHeight = 22;
-            this.listboxproductlijst.Location = new System.Drawing.Point(46, 337);
+            this.listboxproductlijst.Location = new System.Drawing.Point(46, 336);
             this.listboxproductlijst.Margin = new System.Windows.Forms.Padding(4);
             this.listboxproductlijst.Name = "listboxproductlijst";
             this.listboxproductlijst.Size = new System.Drawing.Size(439, 334);

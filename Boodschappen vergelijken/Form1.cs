@@ -32,9 +32,9 @@ namespace Boodschappen_vergelijken
         // programma opstarten en eventuele conn 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Form2 f2 = new Form2();
             f2.Show();
-            this.Close();
         }
     }
 }
