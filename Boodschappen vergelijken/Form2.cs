@@ -16,6 +16,7 @@ namespace Boodschappen_vergelijken
         public Form2()
         {
             InitializeComponent();
+            // zet de buttons op aan
             cbplus.AutoCheck = true;
             cbjumbo.AutoCheck = true;
             cbah.AutoCheck = true;
@@ -33,12 +34,14 @@ namespace Boodschappen_vergelijken
         // if checkbox is check bool is true 
         int intID=0;
         bool pluschecked, dekachecked, vomarchecked, ahchecked, jumbochecked;
+        
         private void cbplus_CheckedChanged(object sender, EventArgs e)
-        {
+        {   //checked of de buttons aan of uit staan
             if (cbplus.Checked)
             {
                 pluschecked = true;
                 intID++;
+            // doet een het winkel ID + of - 1 zodat 
             }
             else
             {   pluschecked = false;
@@ -130,7 +133,7 @@ namespace Boodschappen_vergelijken
         {
             if (intID == 5)
             {
-                string query = "select * from ";
+                string query = "SELECT * FROM `winkel` ";
             }
             
             if (listboxproductlijst.Text == "")

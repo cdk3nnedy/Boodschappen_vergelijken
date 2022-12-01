@@ -17,17 +17,6 @@ namespace Boodschappen_vergelijken
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         // button om naar vergelijk pagina te gaan 
         private void button1_Click(object sender, EventArgs e)
         {
