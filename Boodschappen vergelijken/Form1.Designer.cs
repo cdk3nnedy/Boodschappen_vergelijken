@@ -53,7 +53,6 @@ namespace Boodschappen_vergelijken
             this.label1.Size = new System.Drawing.Size(220, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Kies welke pagina u wil opstarten.";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // button2
             // 

@@ -51,6 +51,7 @@ namespace Boodschappen_vergelijken
             }
             else if (strUsername!="admin"&&strWachtwoord!="admin"){
                 MessageBox.Show("gegevens waren incorrect probeer opnieuw ");
+                Foutlogin++;
             }
              if (Foutlogin == 3)   {
                 

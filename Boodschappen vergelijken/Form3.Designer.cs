@@ -43,74 +43,83 @@ namespace Boodschappen_vergelijken
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(426, 38);
+            this.label1.Location = new System.Drawing.Point(320, 31);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 17);
+            this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(70, 70);
+            this.label2.Location = new System.Drawing.Point(52, 57);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(452, 17);
+            this.label2.Size = new System.Drawing.Size(342, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "gelieve uw username en wachtwoord in te vullen voor de admin pagina";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(230, 144);
+            this.txtUsername.Location = new System.Drawing.Point(172, 117);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(165, 22);
+            this.txtUsername.Size = new System.Drawing.Size(125, 20);
             this.txtUsername.TabIndex = 2;
             // 
             // txtWachtwoord
             // 
-            this.txtWachtwoord.Location = new System.Drawing.Point(230, 195);
+            this.txtWachtwoord.Location = new System.Drawing.Point(172, 158);
+            this.txtWachtwoord.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtWachtwoord.Name = "txtWachtwoord";
-            this.txtWachtwoord.Size = new System.Drawing.Size(165, 22);
+            this.txtWachtwoord.Size = new System.Drawing.Size(125, 20);
             this.txtWachtwoord.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(70, 200);
+            this.label3.Location = new System.Drawing.Point(52, 162);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 17);
+            this.label3.Size = new System.Drawing.Size(68, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "Wachtwoord";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(417, 162);
+            this.label4.Location = new System.Drawing.Point(313, 132);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 17);
+            this.label4.Size = new System.Drawing.Size(0, 13);
             this.label4.TabIndex = 4;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(70, 147);
+            this.label5.Location = new System.Drawing.Point(52, 119);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 17);
+            this.label5.Size = new System.Drawing.Size(82, 13);
             this.label5.TabIndex = 7;
             this.label5.Text = "gebruikersnaam";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(425, 170);
+            this.label6.Location = new System.Drawing.Point(319, 138);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 17);
+            this.label6.Size = new System.Drawing.Size(0, 13);
             this.label6.TabIndex = 6;
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(214, 260);
+            this.btnLogin.Location = new System.Drawing.Point(160, 211);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(203, 59);
+            this.btnLogin.Size = new System.Drawing.Size(152, 48);
             this.btnLogin.TabIndex = 8;
             this.btnLogin.Text = "Inloggen";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -118,9 +127,9 @@ namespace Boodschappen_vergelijken
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(575, 373);
+            this.ClientSize = new System.Drawing.Size(431, 303);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
@@ -130,6 +139,7 @@ namespace Boodschappen_vergelijken
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form3";
             this.Text = "inloggen AUB";
             this.Load += new System.EventHandler(this.Form3_Load);
