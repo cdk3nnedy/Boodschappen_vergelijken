@@ -24,6 +24,7 @@ namespace Boodschappen_vergelijken
             MySqlConnection conn = new MySqlConnection(constring);
             conn.Open();
             string query = "select * from ....";
+        
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

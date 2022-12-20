@@ -52,7 +52,7 @@ namespace Boodschappen_vergelijken
             this.cbah.Location = new System.Drawing.Point(34, 72);
             this.cbah.Margin = new System.Windows.Forms.Padding(4);
             this.cbah.Name = "cbah";
-            this.cbah.Size = new System.Drawing.Size(130, 28);
+            this.cbah.Size = new System.Drawing.Size(101, 22);
             this.cbah.TabIndex = 0;
             this.cbah.Text = "Albert Heijn";
             this.cbah.UseVisualStyleBackColor = true;
@@ -64,7 +64,7 @@ namespace Boodschappen_vergelijken
             this.cbplus.Location = new System.Drawing.Point(34, 108);
             this.cbplus.Margin = new System.Windows.Forms.Padding(4);
             this.cbplus.Name = "cbplus";
-            this.cbplus.Size = new System.Drawing.Size(68, 28);
+            this.cbplus.Size = new System.Drawing.Size(56, 22);
             this.cbplus.TabIndex = 1;
             this.cbplus.Text = "Plus";
             this.cbplus.UseVisualStyleBackColor = true;
@@ -76,7 +76,7 @@ namespace Boodschappen_vergelijken
             this.cbdeka.Location = new System.Drawing.Point(34, 144);
             this.cbdeka.Margin = new System.Windows.Forms.Padding(4);
             this.cbdeka.Name = "cbdeka";
-            this.cbdeka.Size = new System.Drawing.Size(120, 28);
+            this.cbdeka.Size = new System.Drawing.Size(100, 22);
             this.cbdeka.TabIndex = 2;
             this.cbdeka.Text = "Dekamarkt";
             this.cbdeka.UseVisualStyleBackColor = true;
@@ -88,7 +88,7 @@ namespace Boodschappen_vergelijken
             this.cbvomar.Location = new System.Drawing.Point(34, 180);
             this.cbvomar.Margin = new System.Windows.Forms.Padding(4);
             this.cbvomar.Name = "cbvomar";
-            this.cbvomar.Size = new System.Drawing.Size(88, 28);
+            this.cbvomar.Size = new System.Drawing.Size(71, 22);
             this.cbvomar.TabIndex = 3;
             this.cbvomar.Text = "Vomar";
             this.cbvomar.UseVisualStyleBackColor = true;
@@ -100,7 +100,7 @@ namespace Boodschappen_vergelijken
             this.cbjumbo.Location = new System.Drawing.Point(32, 216);
             this.cbjumbo.Margin = new System.Windows.Forms.Padding(4);
             this.cbjumbo.Name = "cbjumbo";
-            this.cbjumbo.Size = new System.Drawing.Size(90, 28);
+            this.cbjumbo.Size = new System.Drawing.Size(73, 22);
             this.cbjumbo.TabIndex = 4;
             this.cbjumbo.Text = "Jumbo";
             this.cbjumbo.UseVisualStyleBackColor = true;
@@ -112,7 +112,7 @@ namespace Boodschappen_vergelijken
             this.label1.Location = new System.Drawing.Point(30, 38);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(364, 24);
+            this.label1.Size = new System.Drawing.Size(282, 18);
             this.label1.TabIndex = 5;
             this.label1.Text = "Selecteer De winkels die je wilt vergelijken";
             // 
@@ -122,7 +122,7 @@ namespace Boodschappen_vergelijken
             this.label2.Location = new System.Drawing.Point(28, 249);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(357, 24);
+            this.label2.Size = new System.Drawing.Size(277, 18);
             this.label2.TabIndex = 6;
             this.label2.Text = "Voeg een Product toe aan de vergelijklijst";
             // 
@@ -131,7 +131,7 @@ namespace Boodschappen_vergelijken
             this.textboxtoevoegen.Location = new System.Drawing.Point(32, 288);
             this.textboxtoevoegen.Margin = new System.Windows.Forms.Padding(4);
             this.textboxtoevoegen.Name = "textboxtoevoegen";
-            this.textboxtoevoegen.Size = new System.Drawing.Size(353, 28);
+            this.textboxtoevoegen.Size = new System.Drawing.Size(353, 24);
             this.textboxtoevoegen.TabIndex = 7;
             // 
             // btntoevoegen
@@ -143,17 +143,18 @@ namespace Boodschappen_vergelijken
             this.btntoevoegen.TabIndex = 8;
             this.btntoevoegen.Text = "Toevoegen";
             this.btntoevoegen.UseVisualStyleBackColor = true;
-            this.btntoevoegen.Click += new System.EventHandler(this.btntoevoegen_Click);
+            this.btntoevoegen.Click += new System.EventHandler(this.btntoevoegen_Click_1);
             // 
             // listboxproductlijst
             // 
             this.listboxproductlijst.FormattingEnabled = true;
-            this.listboxproductlijst.ItemHeight = 22;
+            this.listboxproductlijst.ItemHeight = 17;
             this.listboxproductlijst.Location = new System.Drawing.Point(46, 336);
             this.listboxproductlijst.Margin = new System.Windows.Forms.Padding(4);
             this.listboxproductlijst.Name = "listboxproductlijst";
-            this.listboxproductlijst.Size = new System.Drawing.Size(439, 334);
+            this.listboxproductlijst.Size = new System.Drawing.Size(439, 327);
             this.listboxproductlijst.TabIndex = 9;
+            this.listboxproductlijst.SelectedIndexChanged += new System.EventHandler(this.listboxproductlijst_SelectedIndexChanged);
             // 
             // vergelijkbtn
             // 
@@ -164,7 +165,7 @@ namespace Boodschappen_vergelijken
             this.vergelijkbtn.TabIndex = 10;
             this.vergelijkbtn.Text = "vergelijk";
             this.vergelijkbtn.UseVisualStyleBackColor = true;
-            this.vergelijkbtn.Click += new System.EventHandler(this.vergelijkbtn_Click);
+            this.vergelijkbtn.Click += new System.EventHandler(this.vergelijkbtn_Click_1);
             // 
             // label3
             // 
@@ -172,18 +173,18 @@ namespace Boodschappen_vergelijken
             this.label3.Location = new System.Drawing.Point(646, 38);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(330, 24);
+            this.label3.Size = new System.Drawing.Size(259, 18);
             this.label3.TabIndex = 11;
             this.label3.Text = "De product in totaal zijn goedkoper bij:";
             // 
             // listboxwinkel
             // 
             this.listboxwinkel.FormattingEnabled = true;
-            this.listboxwinkel.ItemHeight = 22;
+            this.listboxwinkel.ItemHeight = 17;
             this.listboxwinkel.Location = new System.Drawing.Point(650, 72);
             this.listboxwinkel.Margin = new System.Windows.Forms.Padding(4);
             this.listboxwinkel.Name = "listboxwinkel";
-            this.listboxwinkel.Size = new System.Drawing.Size(409, 114);
+            this.listboxwinkel.Size = new System.Drawing.Size(409, 106);
             this.listboxwinkel.TabIndex = 12;
             // 
             // label4
@@ -192,23 +193,23 @@ namespace Boodschappen_vergelijken
             this.label4.Location = new System.Drawing.Point(646, 216);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(418, 24);
+            this.label4.Size = new System.Drawing.Size(323, 18);
             this.label4.TabIndex = 13;
             this.label4.Text = "De producten individueel zijn het goedkoopst bij:";
             // 
             // listboxproductindividu
             // 
             this.listboxproductindividu.FormattingEnabled = true;
-            this.listboxproductindividu.ItemHeight = 22;
+            this.listboxproductindividu.ItemHeight = 17;
             this.listboxproductindividu.Location = new System.Drawing.Point(650, 249);
             this.listboxproductindividu.Margin = new System.Windows.Forms.Padding(4);
             this.listboxproductindividu.Name = "listboxproductindividu";
-            this.listboxproductindividu.Size = new System.Drawing.Size(409, 422);
+            this.listboxproductindividu.Size = new System.Drawing.Size(409, 412);
             this.listboxproductindividu.TabIndex = 14;
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
