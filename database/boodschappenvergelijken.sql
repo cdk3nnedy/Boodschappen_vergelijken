@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 21, 2022 at 10:13 PM
+-- Generation Time: Nov 25, 2022 at 11:17 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -24,65 +24,73 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `albert_heijn`
+-- Table structure for table `product`
 --
 
-CREATE TABLE `albert_heijn` (
+CREATE TABLE `product` (
   `id` int(11) NOT NULL,
-  `naam` varchar(255) NOT NULL,
-  `prijs` double NOT NULL,
-  `vooraad` int(255) NOT NULL
+  `naam` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `product`
+--
+
+INSERT INTO `product` (`id`, `naam`) VALUES
+(1, 'eieren'),
+(2, 'melk'),
+(3, 'kaas'),
+(4, 'brood'),
+(5, 'cola'),
+(6, 'water'),
+(7, 'boter'),
+(8, 'ham'),
+(9, 'pindakaas'),
+(10, 'stokbrood'),
+(11, 'vla'),
+(12, 'yoghurt'),
+(13, 'nootjes'),
+(14, 'kip'),
+(15, 'meloen'),
+(16, 'appel'),
+(17, 'kiwi'),
+(18, 'sushi'),
+(19, 'banaan'),
+(20, 'sap');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `dekamarkt`
+-- Table structure for table `winkel`
 --
 
-CREATE TABLE `dekamarkt` (
+CREATE TABLE `winkel` (
   `id` int(11) NOT NULL,
-  `naam` varchar(255) NOT NULL,
-  `prijs` double NOT NULL,
-  `vooraad` int(255) NOT NULL
+  `naam` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `winkel`
+--
+
+INSERT INTO `winkel` (`id`, `naam`) VALUES
+(1, 'Albert Heijn'),
+(2, 'Jumbo'),
+(3, 'Plus'),
+(4, 'Dekamarkt'),
+(5, 'Vomar');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jumbo`
+-- Table structure for table `winkelproduct`
 --
 
-CREATE TABLE `jumbo` (
+CREATE TABLE `winkelproduct` (
   `id` int(11) NOT NULL,
-  `naam` varchar(255) NOT NULL,
-  `prijs` double NOT NULL,
-  `vooraad` int(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `plus`
---
-
-CREATE TABLE `plus` (
-  `id` int(11) NOT NULL,
-  `naam` varchar(255) NOT NULL,
-  `prijs` double NOT NULL,
-  `vooraad` int(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `vomar`
---
-
-CREATE TABLE `vomar` (
-  `id` int(11) NOT NULL,
-  `naam` varchar(255) NOT NULL,
-  `prijs` double NOT NULL,
+  `product` int(11) NOT NULL,
+  `winkel` int(11) NOT NULL,
+  `prijs` decimal(65,2) NOT NULL,
   `vooraad` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -91,68 +99,57 @@ CREATE TABLE `vomar` (
 --
 
 --
--- Indexes for table `albert_heijn`
+-- Indexes for table `product`
 --
-ALTER TABLE `albert_heijn`
+ALTER TABLE `product`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `dekamarkt`
+-- Indexes for table `winkel`
 --
-ALTER TABLE `dekamarkt`
+ALTER TABLE `winkel`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `jumbo`
+-- Indexes for table `winkelproduct`
 --
-ALTER TABLE `jumbo`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `plus`
---
-ALTER TABLE `plus`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `vomar`
---
-ALTER TABLE `vomar`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `winkelproduct`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `product` (`product`),
+  ADD KEY `winkel` (`winkel`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `albert_heijn`
+-- AUTO_INCREMENT for table `product`
 --
-ALTER TABLE `albert_heijn`
+ALTER TABLE `product`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+
+--
+-- AUTO_INCREMENT for table `winkel`
+--
+ALTER TABLE `winkel`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `winkelproduct`
+--
+ALTER TABLE `winkelproduct`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `dekamarkt`
+-- Constraints for dumped tables
 --
-ALTER TABLE `dekamarkt`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `jumbo`
+-- Constraints for table `winkelproduct`
 --
-ALTER TABLE `jumbo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `plus`
---
-ALTER TABLE `plus`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `vomar`
---
-ALTER TABLE `vomar`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `winkelproduct`
+  ADD CONSTRAINT `winkelproduct_ibfk_1` FOREIGN KEY (`product`) REFERENCES `product` (`id`),
+  ADD CONSTRAINT `winkelproduct_ibfk_2` FOREIGN KEY (`winkel`) REFERENCES `winkel` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

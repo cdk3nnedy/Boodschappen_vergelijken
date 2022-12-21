@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Boodschappen_vergelijken
 {
@@ -16,20 +17,19 @@ namespace Boodschappen_vergelijken
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
+        // button om naar vergelijk pagina te gaan 
         private void button1_Click(object sender, EventArgs e)
         {
-           ;
+            this.Hide();
+            Form2 f2 = new Form2();
+            f2.Show();
+        }
+        // button om naar admin page te gaan
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form3 f3 = new Form3();
+            f3.Show();
         }
     }
 }
