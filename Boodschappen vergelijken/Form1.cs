@@ -31,5 +31,10 @@ namespace Boodschappen_vergelijken
             Form3 f3 = new Form3();
             f3.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
